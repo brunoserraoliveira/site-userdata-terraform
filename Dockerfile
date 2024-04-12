@@ -1,2 +1,4 @@
-FROM httpd:2.4
-COPY site/ /usr/local/apache2/htdocs/
+FROM nginx:latest
+COPY site /usr/share/nginx/html
+WORKDIR /usr/share/nginx/html
+
